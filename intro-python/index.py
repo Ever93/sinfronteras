@@ -99,3 +99,64 @@ lista5.sort()
 print(lista5)
 
 #Tuplas
+print("Las tuplas utilizan parentesis() en vez de corchetes[] como el caso de las listas")
+print("las tuplas a diferencia de las listas tienen menos metodos")
+
+tupla = ('hola', 'mundo', 'de', 'tuplas')
+print(tupla)
+print('metodo count para contar la cantida de veces que repite un dato')
+print(tupla.count('hola'))
+print('metodo index para devolver la posicion en la que encontro el dato')
+print(tupla.index('de'), 'corresponde a esta posicion contando de izquierda a derecha, desde el 0')
+print('Para acceder al primer elemento de mi tupla tengo que indicarle la posicion 0')
+print('Ejemplo')
+print(tupla[0])
+print('Las tuplas no son modificables')
+print('Para modificar los datos de una tupla debemos convertirlo a una lista')
+
+listaDeTupla = list(tupla)
+listaDeTupla.append('agregando lista')
+print(listaDeTupla)
+
+print('RANGOS')
+rango = range(6)
+print(rango)
+
+print('Introduccion a Diccionarios')
+print('Los diccionarios se definen utilizando las llaves {')
+
+diccionario = {
+    "nombre": "Adalberto",
+    "apellido": "Reyes Palacios",
+    "usuario": "adalreyes"
+}
+
+print(diccionario)
+print('Acceder a un valor del diccionario, usamos [] indicandole donde queremos acceder')
+print('Ejemplo')
+print(diccionario['apellido'])
+print('Tambien se puede utilizar metodos para acceder a los datos del diccionario')
+print(diccionario.get('usuario'))
+print('Tambien se puede cambiar los valores del diccionario')
+diccionario['apellido'] = 'Rojas'
+print(diccionario)
+print('En los diccionarios tambien puedo utilizar la funcion de len')
+print(len(diccionario))
+print('Agregar Valores dentro del Diccionario')
+diccionario["clave"] = '12345'
+print(diccionario)
+print('Eliminar datos del Diccionario')
+diccionario.pop('apellido')
+print('Ejemplo de diccionario eliminando apellido')
+print(diccionario)
+print('Diccionario con contenido agregado')
+diccionario["apellido"] = 'Reyes Palacios'
+print(diccionario)
+print('Tambien podemos eliminar el ultimo item agregado usando el metodo popitem')
+diccionario.popitem()
+print(diccionario)
+print('Tambien podemos eliminar datos usando el metodo del')
+del diccionario['nombre']
+print(diccionario)
+copiadiccionario = diccionario.copy()
+print(diccionario, copiadiccionario)
