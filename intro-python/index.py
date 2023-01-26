@@ -48,31 +48,31 @@ complejo = 1j
 
 #listas son varios datos agrupados en una lista
 lista = [1, 2, 3, 4, 5, 5]
-print(lista)
 #Manipulacion de listas
+#print(lista)
 #Agregar elemento a nuestra lista, utilizamos el metodo append
 lista.append(5)
-print(lista)
+#print(lista)
 
 #realizamos una copia de la lista
 lista2 = lista.copy()
-print(lista2)
+#print(lista2)
 
 #Eliminar los elementos de una lista, utilizamos clear
 #lista.clear()
 #print(lista)
 #Contar elementos dentro de una lista y ver cuantas veces se repite
 #Utlizamos el metodo count
-print(lista.count(5))
+#print(lista.count(5))
 
 #Podemos contar la cantidad de elementos que posee la lista
-print(len(lista))
+#print(len(lista))
 
 #Tambien podemos acceder a los elementos de una lista
 #En programacion el primer elemento de una lista se encuentra en el indice 0
 
-print(lista[0])
-print(lista[3])
+#print(lista[0])
+#print(lista[3])
 lista3 = ['hola', 'adios', 'Buen dia', 'Buenas noches']
 
 print(lista3[1])
@@ -87,43 +87,43 @@ print(lista3[1])
 #Si queremos eliminar un elemento especifico de la lista usamos el metodo remove
 lista4 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 #lista4.remove(8)
-print(lista4)
+#print(lista4)
 
 #Ordenar la lista
 lista4.reverse()
-print(lista4)
+#print(lista4)
 
 lista5 = ['hola', 'adios', 'Buen dia',]
 #ordenar lista usando el metodo sort, para usar este metodo los datos deben ser del mismo tipo
 lista5.sort()
-print(lista5)
+#print(lista5)
 
 #Tuplas
-print("Las tuplas utilizan parentesis() en vez de corchetes[] como el caso de las listas")
-print("las tuplas a diferencia de las listas tienen menos metodos")
+#print("Las tuplas utilizan parentesis() en vez de corchetes[] como el caso de las listas")
+#print("las tuplas a diferencia de las listas tienen menos metodos")
 
 tupla = ('hola', 'mundo', 'de', 'tuplas')
-print(tupla)
-print('metodo count para contar la cantida de veces que repite un dato')
-print(tupla.count('hola'))
-print('metodo index para devolver la posicion en la que encontro el dato')
-print(tupla.index('de'), 'corresponde a esta posicion contando de izquierda a derecha, desde el 0')
-print('Para acceder al primer elemento de mi tupla tengo que indicarle la posicion 0')
-print('Ejemplo')
-print(tupla[0])
-print('Las tuplas no son modificables')
-print('Para modificar los datos de una tupla debemos convertirlo a una lista')
+#print(tupla)
+#print('metodo count para contar la cantida de veces que repite un dato')
+#print(tupla.count('hola'))
+#print('metodo index para devolver la posicion en la que encontro el dato')
+#print(tupla.index('de'), 'corresponde a esta posicion contando de izquierda a derecha, desde el 0')
+#print('Para acceder al primer elemento de mi tupla tengo que indicarle la posicion 0')
+#print('Ejemplo')
+#print(tupla[0])
+#print('Las tuplas no son modificables')
+#print('Para modificar los datos de una tupla debemos convertirlo a una lista')
 
 listaDeTupla = list(tupla)
 listaDeTupla.append('agregando lista')
-print(listaDeTupla)
+#print(listaDeTupla)
 
-print('RANGOS')
+#print('RANGOS')
 rango = range(6)
-print(rango)
+#print(rango)
 
-print('Introduccion a Diccionarios')
-print('Los diccionarios se definen utilizando las llaves {')
+#print('Introduccion a Diccionarios')
+#print('Los diccionarios se definen utilizando las llaves {')
 
 diccionario = {
     "nombre": "Adalberto",
@@ -131,32 +131,55 @@ diccionario = {
     "usuario": "adalreyes"
 }
 
-print(diccionario)
-print('Acceder a un valor del diccionario, usamos [] indicandole donde queremos acceder')
-print('Ejemplo')
-print(diccionario['apellido'])
-print('Tambien se puede utilizar metodos para acceder a los datos del diccionario')
-print(diccionario.get('usuario'))
-print('Tambien se puede cambiar los valores del diccionario')
+#print(diccionario)
+#print('Acceder a un valor del diccionario, usamos [] indicandole donde queremos acceder')
+#print('Ejemplo')
+#print(diccionario['apellido'])
+#print('Tambien se puede utilizar metodos para acceder a los datos del diccionario')
+#print(diccionario.get('usuario'))
+#print('Tambien se puede cambiar los valores del diccionario')
 diccionario['apellido'] = 'Rojas'
-print(diccionario)
-print('En los diccionarios tambien puedo utilizar la funcion de len')
-print(len(diccionario))
-print('Agregar Valores dentro del Diccionario')
+#print(diccionario)
+#print('En los diccionarios tambien puedo utilizar la funcion de len')
+#print(len(diccionario))
+#print('Agregar Valores dentro del Diccionario')
 diccionario["clave"] = '12345'
-print(diccionario)
-print('Eliminar datos del Diccionario')
+#print(diccionario)
+#print('Eliminar datos del Diccionario')
 diccionario.pop('apellido')
-print('Ejemplo de diccionario eliminando apellido')
-print(diccionario)
-print('Diccionario con contenido agregado')
+#print('Ejemplo de diccionario eliminando apellido')
+#print(diccionario)
+#print('Diccionario con contenido agregado')
 diccionario["apellido"] = 'Reyes Palacios'
-print(diccionario)
-print('Tambien podemos eliminar el ultimo item agregado usando el metodo popitem')
+#print(diccionario)
+#print('Tambien podemos eliminar el ultimo item agregado usando el metodo popitem')
 diccionario.popitem()
-print(diccionario)
-print('Tambien podemos eliminar datos usando el metodo del')
+#print(diccionario)
+#print('Tambien podemos eliminar datos usando el metodo del')
 del diccionario['nombre']
-print(diccionario)
+#print(diccionario)
 copiadiccionario = diccionario.copy()
-print(diccionario, copiadiccionario)
+#print(diccionario, copiadiccionario)
+#print('Podemos eliminar todo el contenido del diccionario usando el metodo clear')
+diccionario.clear()
+#print(diccionario)
+#print('Creamos un diccionario que contenga otro diccionario, Diccionario Anidado')
+personas = {
+    "Perfil": {
+        "nombre": "Hilario",
+        "edad": "20"
+    },
+    "Referencia": {
+        "nombre": "Aurelio",
+        "edad": "32"
+    }
+}
+
+#print(personas)
+#print('Tipos de datos Boolean, estos pueden contener solo dos tipos de datos, verdadero o falso')
+verdadero = True
+falso = False
+
+
+print('Control de Flujo utilizando la condional if')
+
