@@ -8,3 +8,8 @@
 #Ejemplos
 if 2 == 2:
     print('2 es igual a 2')
+    
+#Tambien se puede usar condiciones and y or
+#Ejemplo
+if 3 == 3 and 4 == 4:
+    print('3y 4 son iguales a sus pares')
